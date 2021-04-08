@@ -57,6 +57,7 @@ html {
 
 body {
     font-size:3rem;
+    background: #8F84BE;
 }
 
 h1 {
@@ -67,19 +68,22 @@ h1 {
 h2 {
     font-size: 4.5rem;
     font-weight: bold;
-    color: #E352FF;
+    color: #8F84BE;
 }
 
 /* top styling */
 #top {
     display: flex;
     justify-content: space-between;
-    padding: 0.9%
+    padding: 2% 0.9%
 }
 
+#top * {
+    flex-shrink: 0;
+}
 #top a {
     border: 4px black solid;
-    padding: 10px;
+    padding: 10px 30px;
     margin:0 -4px 0 0;
     font-size:3rem;
     text-decoration: none;
@@ -118,15 +122,24 @@ a#selected{
     position:absolute;
     width: 20%;
     text-align:center;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 8rem;
+    text-shadow:        -1px -1px 0 #000,
+                        0   -1px 0 #000,
+                        1px -1px 0 #000,
+                        1px  0   0 #000,
+                        1px  1px 0 #000,
+                        0    1px 0 #000,
+                        -1px  1px 0 #000,
+                        -1px  0   0 #000;
 }
 
 .overlay h2 {
     padding: 10px;
-    border-radius:25px
+    border-radius:25px;
+    text-decoration: outline;	
 }
 
 .overlay a {
@@ -134,5 +147,6 @@ a#selected{
     padding: 3%;
     border-radius: 9px;
     text-decoration: none;
-    color: #D500FF;
+
+    color: #8F84BE;
 }
