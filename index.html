@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio site</title>
     <link rel="stylesheet" href="style/index.css">
+    <script src="https://kit.fontawesome.com/22b0b67bbc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="top">
@@ -15,29 +16,46 @@
             <a href="contact.html">Contact</a>
             <a href="projects.html">Projects</a>
         </div>
+        <div class='divider'/>
     </section>
     <section id="middle">
-        <div class="imageContainer">
-            <img src="https://images.unsplash.com/photo-1548611716-3000815a5803"/>
-            <div class=overlay>
-                <h2 class='reltoImg'>Adrian Henson</h2>
-                <a class='reltoImg' href="projects.html">My Projects</a>
-           </div>
+        <div class='profileImg'>
+            <img src="profilepic.jpg"/>
         </div>
-        <div class='hidden'>
-            <img src="https://images.unsplash.com/photo-1548611716-3000815a5803"/>
+        <div id="myInfo" class="flexVert">
+            <h2>Adrian Henson</h2>
+            <a href="#Projects">My Projects</a>
+            <div>
+                <p>I am a Junior Software developer who started by self-teaching
+                    Python and JavaScript. I am familiar with Django, and I am
+                    currently on the path to finding a job with my software development skills.
+                </p>
+            </div>
+        </div>
         </div>
     </section>
     <section>
-        <div class='Projects'>
+        <div id='Projects'>
             <ul>
-                <li>t</li>
-                <li>t
-                <li>t
-                <li>
-                <li>
-                <li>
+                <li><a href="#"><img src='https://picsum.photos/300'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/301'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/302'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/303'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/304'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/305'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/306'/><h3>Placeholder Project</h3></a>
+                <li><a href="#"><img src='https://picsum.photos/307'/><h3>Placeholder Project</h3></a>
             </ul>
+        </div>
+    </section>
+    <section id='footer'>
+        <div class='flexVert'>
+            <h3>Need a web developer?</h3>
+            <a class='Contact' href="contact.html">Contact Me</a>
+        </div>
+        <div class='socialMedia'>
+            <a href="https://www.linkedin.com/in/adrian-henson-258855155/" class="fab fa-linkedin"> LinkedIn</a>
+            <a href="https://github.com/AdrianHDev/" class="fab fa-github-square"> GitHub</a>
         </div>
     </section>
 </body>
