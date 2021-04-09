@@ -310,15 +310,16 @@ h1 {
   border-bottom: 4px solid var(--dark-color);
   border-bottom-right-radius: 53px;
   border-bottom-left-radius: 53px;
-  z-index: 15;
 }
 
 #Projects li a:hover img {
-  background: var(--var(--link-color));
+  background: var(--dark-color);
+  
 }
 
 #Projects li a:hover h3 {
-  background: var(--var(--link-color));
+  background: var(--dark-color);
+  color:var(--link-color);
 }
 
 #Projects ul li img {
