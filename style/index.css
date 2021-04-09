@@ -52,11 +52,16 @@ table {
 
 
 * {
-    /* border: 1px solid black; */
+    /* border: 1px solid var(--dark-color); */
     width: 100%;
     box-sizing: border-box;
-    --highlightImgCover: #84BE8F;
-    --imgCover: darkslategrey;
+    --highlightImgCover: var(--link-color);
+    --imgCover: LIGHTSALMON;
+    --dark-color: #003300;
+    --header-color:DARKRED;
+    --body-color: FIREBRICK;
+    --light-color:GHOSTWHITE;
+    --link-color: DARKSEAGREEN;
 }
 
 html {
@@ -65,18 +70,15 @@ html {
 
 body {
     font-size:3rem;
-    background: #8F84BE;
+    background: var(--body-color);
 }
 
 h1 {
     font-size: 5.5rem;
     font-weight: bold;
+    color:var(--imgCover);
 }
 
-h2 {
-    font-size: 8rem;
-    font-weight: bold;
-}
 
 .flexVert{
     display:flex;
@@ -88,10 +90,10 @@ h2 {
 #top {
     justify-content: space-between;
     padding: 1.5% 0%;
-    background: #906AB9;
-    border-bottom: 5px solid black;
+    background: var(--header-color);
+    border-bottom: 5px solid var(--dark-color);
 }
-}
+
 #top {
     width: 100%;
 }
@@ -99,33 +101,35 @@ h2 {
 #navbar {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2%;
+    padding: 0 1%;
     font-size: 0px;
 }
 #top a {
-    border: 4px black solid;
+    border: 4px var(--dark-color) solid;
     text-align:center;
     padding: 1% 1.5%;
     margin:0 -4px 0 0;
     font-size:3rem;
     text-decoration: none;
-    color:black;
+    color:var(--dark-color);
     width: 15rem;
-    transition: 0.5s
+    transition:0.5s;
+    background: var(--link-color);
 }
 
 #top a:hover {
-    background: black;
-    color: #84BE8F;
+    background: var(--dark-color);
+    color: var(--link-color);
 }
 
 #top a#selected{
     border: 4px transparent solid;
-    background: black;
-    color: white;
+    background: var(--dark-color);
+    color: var(--light-color);
+    cursor:not-allowed;
 }
 #top h1 {
-    padding:0 2%
+    padding:0.5% 1%
 }
 
 /* middle styling */
@@ -136,18 +140,22 @@ h2 {
     overflow:hidden;
 }
 
+#myInfo h2 {
+    font-size: 8rem;
+    font-weight: bold;
+}
 #middle .profileImg{
     width:65%;
     margin: 1% 0 0 1%;
 }
 .profileImg img {
-    border: 4px solid black;
+    border: 4px solid var(--dark-color);
 }
 
 #myInfo {
     text-align: left;
     padding: 3%;
-    color:darkslategray;
+    color:var(--imgCover);
     align-items:left;
 }
 
@@ -159,16 +167,15 @@ h2 {
     text-align:center;
     text-decoration: none;
     margin: 3% 0;
-    background: #84BE8F;
-    color: black;
+    background: var(--link-color);
+    color: var(--dark-color);
     font-weight: 900;
-    border-radius:10px;
     transition:0.5s
 }
 
 #myInfo a:hover{
-    color:#84BE8F;
-    background:black;
+    color:var(--link-color);
+    background:var(--dark-color);
 }
 
 #myInfo p {
@@ -194,15 +201,13 @@ h2 {
 }
 
 #Projects a {
-    color: white;
+    color: var(--dark-color);
 }
 #Projects li a img {
     padding: 5% 5% 5% 5%;  
     height:auto;
     background:var(--imgCover);
     margin: 0 0 0 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px;
     transition:0.5s;
 }
 
@@ -210,8 +215,6 @@ h2 {
     padding: 5px;
     margin: -7% 0 0 0;
     background: var(--imgCover);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     transition:0.5s;
 }
 
@@ -233,7 +236,7 @@ a {
 
 /* footer style */
 #footer {
-    background: darkslategrey;
+    background: var(--header-color);
     padding: 0 0 0 0;
     justify-content:center;
 }
@@ -241,9 +244,18 @@ a {
 #footer h3{
     font-size: 5rem;
     font-weight: bolder;
-    color: whitesmoke;
+    color: var(--light-color);
     text-align:center;
     margin: 2.5% 0;
+}
+
+#footer a{
+
+    border:5px solid var(--imgCover);
+}
+
+#footer a:hover{
+    border: 5px solid var(--highlightImgCover);
 }
 
 a.Contact {
@@ -253,16 +265,15 @@ a.Contact {
     text-align:center;
     text-decoration: none;
     margin: auto;
-    background: #84BE8F;
-    color: black;
+    background: var(--link-color);
+    color: var(--dark-color);
     font-weight: 900;
-    border-radius:20px;
     transition:0.5s;
 }
 
 a.Contact:hover{
-        color:#84BE8F;
-        background:black;
+        color:var(--link-color);
+        background:var(--dark-color);
 }
 .socialMedia{
     padding: 2% 1% 0.5% 1%;
@@ -277,13 +288,12 @@ a.Contact:hover{
     width: auto;
     display: inline-block;
     transition:0.5s;
-    background: white;
+    background: var(--light-color);
     padding: 1%;
-    border-radius: 10px;
 }
 .fab:hover{
-    color:whitesmoke;
-    background:black;
+    color:var(--light-color);
+    background:var(--dark-color);
 }
 .fa-linkedin{
     color: #0077b5
