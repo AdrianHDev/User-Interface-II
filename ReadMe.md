@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b71733a2-f9d9-40e2-b44d-ef94a2681749/deploy-status)](https://app.netlify.com/sites/pedantic-minsky-a9636c/deploys)
 # Flexbox Module Challenge
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.
