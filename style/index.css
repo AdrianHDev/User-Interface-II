@@ -190,7 +190,7 @@ h1 {
   font-size: 3rem;
   text-decoration: none;
   color: var(--dark-color);
-  width: 15rem;
+  width: auto;
   transition: 0.5s;
   background: var(--link-color);
 }
@@ -225,6 +225,7 @@ h1 {
 #middle .profileImg {
   width: 65%;
   margin: 1% 0 0 1%;
+  display: block;
 }
 .profileImg img {
   border: 4px solid var(--dark-color);
@@ -290,12 +291,8 @@ h1 {
   background: var(--link-color);
   margin: 0 0 0 0;
   transition: 0.5s;
-  border-left: 4px solid var(--dark-color);
-  border-right: 4px solid var(--dark-color);
-  border-top:4px solid var(--dark-color);
+  border: 4px solid var(--dark-color);
   border-radius: 53px;
-  /* border-top-right-radius: 53px; */
-  z-index: -15;
 }
 
 #Projects li a h3 {
@@ -305,9 +302,6 @@ h1 {
   margin: -7% 0 0 0;
   background: var(--link-color);
   transition: 0.5s;
-  border-left: 4px solid var(--dark-color);
-  border-right: 4px solid var(--dark-color);
-  border-bottom: 4px solid var(--dark-color);
   border-bottom-right-radius: 53px;
   border-bottom-left-radius: 53px;
 }
@@ -391,4 +385,122 @@ a.Contact:hover {
 }
 .fa-github-square {
   color: #333333;
+}
+
+
+/* mobile viewport styles */
+
+@media (max-width: 800px) {
+  /* general 800px styles*/
+
+  /* top 800px styles */
+  #top h1 {
+    text-align: center;
+    font-size:6rem;
+    margin: 2% 0;
+  }
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar a {
+    margin: auto;
+    margin-top: -.4rem;
+    text-align: center;
+    padding: 1% auto;
+    width: 25%;
+  }
+
+  /* mid 800px styles */
+  #middle{
+    flex-direction: column;
+    
+  }
+
+  #middle div {
+    text-align:center;
+    justify-content: center;
+  }
+  
+  .profileImg {
+    margin: 3% auto 0 auto !important;
+  }
+
+  #myInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  #myInfo h2 {
+    font-size: 5rem;
+  }
+
+  #myInfo p {
+    font-size: 3rem;
+  }
+
+  /*  footer  800px styles */
+  #footer h3 {
+    font-size: 5rem;
+  }
+
+  .socialMedia a {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* general 500px styles*/
+
+  /* top 5--px styles */
+  #top h1 {
+    text-align: center;
+    font-size:5rem;
+    margin: 2% 0;
+  }
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar a {
+  margin-top: -.4rem;
+  width: 15rem;
+  }
+
+  /* mid 500px styles */
+  #middle{
+    flex-direction: column;
+    
+  }
+
+  #middle div {
+    text-align:center;
+    justify-content: center;
+  }
+  
+  .profileImg {
+    margin: 3% auto 0 auto !important;
+  }
+
+  #myInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  #myInfo h2 {
+    font-size: 4.25rem;
+  }
+
+  #myInfo p {
+    font-size: 2.5rem;
+  }
+
+  /*  footer  500px styles */
+  #footer h3 {
+    font-size: 3rem;
+  }
+
+  .socialMedia a {
+    font-size: 3rem;
+  }
 }
